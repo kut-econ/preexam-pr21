@@ -568,7 +568,19 @@ x = func(False)
 
 ### Q8-2
 
+次のPythonコードを実行した際に、`y`に格納されている辞書を記述しなさい。例:`{1:0,0:1}`
 
+```python
+def generator():
+  for i in range(3):
+    for j in range(2):
+      yield i,j
+
+gen = generator()
+
+x = next(gen)
+y = {i:j for i,j in gen}
+```
 
 ## A 応用問題
 
