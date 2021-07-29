@@ -144,7 +144,7 @@ print(x)
 x = [1,2,3]
 y = x
 x[1] = 5
-print(y)
+print(y,x is y)
 ```
 
 1. `[1,5,3] False`
