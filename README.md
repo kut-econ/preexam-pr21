@@ -46,6 +46,7 @@
   - [第8回 関数とモジュール](#第8回-関数とモジュール)
     - [Q8-1](#q8-1)
     - [Q8-2](#q8-2)
+    - [Q8-3](#q8-3)
   - [A 応用問題](#a-応用問題)
     - [QA-1](#qa-1)
     - [QA-2](#qa-2)
@@ -568,7 +569,7 @@ x = func(False)
 
 ### Q8-2
 
-次のPythonコードを実行した際に、`y`に格納されている辞書を記述しなさい。例:`{1:0,0:1}`
+次のPythonコードを実行した際に、`x`に格納されている辞書を記述しなさい。例:`{1:0,0:1}`
 
 ```python
 def generator():
@@ -578,8 +579,17 @@ def generator():
 
 gen = generator()
 
-x = next(gen)
-y = {i:j for i,j in gen}
+x = dict(gen)
+```
+
+### Q8-3
+
+次のPythonコードを実行した際に出力される整数を答えなさい。
+
+```python
+x = range(10)
+y = [i-1 if i<5 else i+1 for i in x if i % 2 == 0]
+print(y[3])
 ```
 
 ## A 応用問題
