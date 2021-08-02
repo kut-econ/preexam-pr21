@@ -403,7 +403,7 @@ print(sys.getsizeof("abcあいう"))
 次のPythonコードを実行した際に得られる出力を文字列で答えなさい。解答例：`abCDefg`
 
 ```python
-print("c".join("AbkBCebg".lower().split("b"))
+print("c".join("AbkBCebg".lower().split("b")))
 ```
 
 ### Q6-3
